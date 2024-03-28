@@ -100,6 +100,7 @@ footer {
 .gallery {
     text-align: center;
     margin-top: 50px;
+    width: 100%;
 }
 
 .image-container {
@@ -113,18 +114,14 @@ footer {
 }
 
 /* Adjustments to Gallery Styles */
-.gallery {
-    width: 25%; /* Adjust the width as needed */
-    margin: 0 auto; /* Center the gallery horizontally */
-}
+@media only screen and (min-width: 768px) {
+    .gallery {
+        width: 75%; /* Adjust the width as needed */
+        margin: 0 auto; /* Center the gallery horizontally */
+    }
 
-.image-container {
-    width: 100%; /* Ensure image containers take up full width */
-    max-width: 300px; /* Adjust maximum width as needed */
-}
-
-.image-container img {
-    width: 100%; /* Make images fill their containers */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Ensure proper block-level display */
+    .image-container {
+        width: 100%; /* Ensure image containers take up full width */
+        max-width: 600px; /* Adjust maximum width as needed */
+    }
 }
