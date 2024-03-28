@@ -1,4 +1,154 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Drone Photography</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <style>
+        /* Styles remained unchanged */
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Header remained unchanged -->
+    </header>
+    <main>
+        <section class="gallery">
+            <h2>Featured Drone Shots</h2>
+            <div class="image-container">
+                <a href="Uploads/DJI_0044.JPG">
+                    <img src="Uploads/DJI_0044.JPG" alt="DJI_0044">
+                    <div class="image-overlay">
+                        <div class="image-description">
+                            <p>Stunning aerial view captured with a drone.</p>
+                            <p>Click to view in fullscreen</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="image-container">
+                <a href="Uploads/DJI_0059.JPG">
+                    <img src="Uploads/DJI_0059.JPG" alt="DJI_0059">
+                    <div class="image-overlay">
+                        <div class="image-description">
+                            <p>Breathtaking landscape captured from above.</p>
+                            <p>Click to view in fullscreen</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="image-container">
+                <a href="Uploads/DJI_0061.JPG">
+                    <img src="Uploads/DJI_0061.JPG" alt="DJI_0061">
+                    <div class="image-overlay">
+                        <div class="image-description">
+                            <p>Aerial shot showcasing the beauty of nature.</p>
+                            <p>Click to view in fullscreen</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!-- Footer remained unchanged -->
+    </footer>
+
+    <!-- Include jQuery and Slick Carousel JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.gallery').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+        });
+    </script>
+</body>
+</html> . 
+ChatGPT
+To add the navigation menu (<nav>) to your gallery.html file, you can include the following code within the <header> section:
+
+html
+Copy code
+<header>
+    <h1>Drone Photography</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+Make sure to add this code just after the <header> tag in your HTML file. Here's how your gallery.html file should look after adding the navigation menu:
+
+html
+Copy code
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Drone Photography</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <style>
+        /* Styles remained unchanged */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Drone Photography</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="gallery">
+            <!-- Gallery content remained unchanged -->
+        </section>
+    </main>
+    <footer>
+        <!-- Footer remained unchanged -->
+    </footer>
+
+    <!-- Include jQuery and Slick Carousel JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.gallery').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+        });
+    </script>
+</body>
+</html>
+This should ensure that the navigation menu is included in your gallery page. If you have any further questions or need additional assistance, feel free to ask!
+
+User
+I have fixed the nav bar but now the gallery isn't working and just shows a number 1 in a white box : <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
