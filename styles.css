@@ -100,7 +100,6 @@ footer {
 .gallery {
     text-align: center;
     margin-top: 50px;
-    width: 100%;
 }
 
 .image-container {
@@ -109,16 +108,27 @@ footer {
 }
 
 .gallery img {
-    display: block; /* Ensure each image is displayed as a block element */
-    max-width: 100%; /* Ensure images scale down to fit container width */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 20px; /* Add space between images */
+    max-width: 100%;
+    height: auto;
 }
 
-/* Adjustments to Gallery Styles for Mobile Devices */
-@media only screen and (max-width: 767px) {
-    .gallery img {
-        max-width: 90%; /* Increase image size for mobile */
-        margin-bottom: 20px; /* Add space between images */
-    }
+/* Add this CSS to your styles.css file */
+.gallery {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.image-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    max-width: 600px;
+}
+.gallery {
+    width: 25%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the gallery horizontally */
 }
