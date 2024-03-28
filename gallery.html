@@ -123,37 +123,7 @@
         <section class="gallery">
             <h2>Featured Drone Shots</h2>
             <div class="image-container">
-                <a href="Uploads/DJI_0044.JPG">
-                    <img src="Uploads/DJI_0044.JPG" alt="DJI_0044">
-                    <div class="image-overlay">
-                        <div class="image-description">
-                            <p>Stunning aerial view captured with a drone.</p>
-                            <p>Click to view in fullscreen</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="image-container">
-                <a href="Uploads/DJI_0059.JPG">
-                    <img src="Uploads/DJI_0059.JPG" alt="DJI_0059">
-                    <div class="image-overlay">
-                        <div class="image-description">
-                            <p>Breathtaking landscape captured from above.</p>
-                            <p>Click to view in fullscreen</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="image-container">
-                <a href="Uploads/DJI_0061.JPG">
-                    <img src="Uploads/DJI_0061.JPG" alt="DJI_0061">
-                    <div class="image-overlay">
-                        <div class="image-description">
-                            <p>Aerial shot showcasing the beauty of nature.</p>
-                            <p>Click to view in fullscreen</p>
-                        </div>
-                    </div>
-                </a>
+                <!-- Dynamically generate image containers -->
             </div>
         </section>
     </main>
@@ -169,6 +139,29 @@
     <!-- Initialize Slick Carousel -->
     <script type="text/javascript">
         $(document).ready(function(){
+            // Your image loading logic here
+            var images = [
+                "uploads/DJI_0044.JPG",
+                "uploads/DJI_0059.JPG",
+                "uploads/DJI_0061.JPG",
+                // Add more image paths here dynamically
+            ];
+
+            var imageContainer = $('.gallery .image-container');
+            images.forEach(function(imagePath) {
+                var image = $('<a href="' + imagePath + '"> \
+                                  <img src="' + imagePath + '" alt="Drone Image"> \
+                                  <div class="image-overlay"> \
+                                      <div class="image-description"> \
+                                          <p>Stunning aerial view captured with a drone.</p> \
+                                          <p>Click to view in fullscreen</p> \
+                                      </div> \
+                                  </div> \
+                              </a>');
+                imageContainer.append(image);
+            });
+
+            // Initialize Slick Carousel
             $('.gallery').slick({
                 dots: true,
                 infinite: true,
