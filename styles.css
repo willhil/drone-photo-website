@@ -97,19 +97,18 @@ footer {
 }
 
 /* Gallery Page Styles */
-.gallery {
-    text-align: center;
-    margin-top: 50px;
-    width: 25%; /* Adjust the width as needed */
-    margin: 0 auto; /* Center the gallery horizontally */
+/* For screens larger than 600px */
+@media only screen and (min-width: 600px) {
+    .gallery {
+        width: 25%;
+    }
 }
 
-.image-container {
-    max-width: 800px;
-    margin: 0 auto;
+/* For screens smaller than 600px */
+@media only screen and (max-width: 600px) {
+    .gallery {
+        width: 100%;
+    }
 }
 
-.gallery img {
-    max-width: 100%;
-    height: auto;
 }
