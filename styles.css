@@ -111,4 +111,12 @@ footer {
     }
 }
 
+.image-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
 }
