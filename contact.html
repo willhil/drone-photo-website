@@ -6,17 +6,27 @@
     <title>Contact - Drone Photography</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        /* Add new styles for hover effect */
         nav ul li a:hover {
             color: #ffc107;
         }
 
+        /* Add styles for shaded box */
         .shaded-box {
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            padding: 20px;
-            max-width: 600px;
-            margin: 0 auto 20px;
-            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+            color: white; /* Text color */
+            padding: 20px; /* Padding around the content */
+            max-width: 600px; /* Maximum width of the box */
+            margin: 0 auto 20px; /* Center the box horizontally and provide space from the bottom */
+            text-align: center; /* Center-align the text */
+        }
+
+        /* Media query for adjusting form size based on screen width */
+        @media screen and (max-width: 600px) {
+            iframe {
+                width: calc(100% - 40px); /* Adjust as needed */
+                height: auto;
+            }
         }
     </style>
 </head>
@@ -33,10 +43,11 @@
         </nav>
     </header>
     <main>
-        <section class="contact shaded-box"> <!-- Apply shaded-box class here -->
+        <section class="contact shaded-box">
             <h2>Contact Us</h2>
             <p>Feel free to reach out to us for inquiries or bookings.</p>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdtoCI6nQB8yOp92tmDwt2BD6lRPjhd2X972SRuaoge9fwQ6A/viewform?embedded=true" width="640" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <!-- Adjust iframe width and height accordingly -->
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdtoCI6nQB8yOp92tmDwt2BD6lRPjhd2X972SRuaoge9fwQ6A/viewform?embedded=true" width="600" height="640" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </section>
     </main>
     <footer>
