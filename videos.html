@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos - Drone Photography</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add new styles for hover effect */
+        nav ul li a:hover {
+            color: #ffc107;
+        }
+        
+        /* Center the video horizontally and slightly higher */
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Adjusted alignment */
+            height: 100vh; /* Adjust the height if needed */
+        }
+        
+        .video-container iframe {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Drone Photography</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="videos">
+            <h2>Featured Drone Videos</h2>
+            <div class="video-container">
+                <!-- Embedded YouTube video -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/4DSJJMDmaFs?si=VF25LaPJJmErJx29" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Drone Photography. All rights reserved.</p>
+    </footer>
+</body>
+</html>
