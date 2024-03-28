@@ -226,3 +226,9 @@ footer {
     width: 25%; /* Adjust the width as needed */
     margin: 0 auto; /* Center the gallery horizontally */
 }
+body {
+    background-image: url('Uploads/DJI_0043.JPG'); /* Path to the background image */
+    background-size: cover; /* Cover the entire background */
+    background-repeat: no-repeat; /* Prevent background from repeating */
+    background-attachment: fixed; /* Keep background fixed while scrolling */
+}
