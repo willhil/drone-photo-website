@@ -112,23 +112,19 @@ footer {
     height: auto;
 }
 
-/* Add this CSS to your styles.css file */
-.gallery {
-    text-align: center;
-    margin-top: 50px;
-}
-
-.image-container {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.gallery img {
-    max-width: 100%;
-    height: auto;
-    max-width: 600px;
-}
+/* Adjustments to Gallery Styles */
 .gallery {
     width: 25%; /* Adjust the width as needed */
     margin: 0 auto; /* Center the gallery horizontally */
+}
+
+.image-container {
+    width: 100%; /* Ensure image containers take up full width */
+    max-width: 300px; /* Adjust maximum width as needed */
+}
+
+.image-container img {
+    width: 100%; /* Make images fill their containers */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure proper block-level display */
 }
