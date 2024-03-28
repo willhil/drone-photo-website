@@ -109,19 +109,16 @@ footer {
 }
 
 .gallery img {
-    max-width: 100%;
-    height: auto;
+    display: block; /* Ensure each image is displayed as a block element */
+    max-width: 100%; /* Ensure images scale down to fit container width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Add space between images */
 }
 
-/* Adjustments to Gallery Styles */
-@media only screen and (min-width: 768px) {
-    .gallery {
-        width: 75%; /* Adjust the width as needed */
-        margin: 0 auto; /* Center the gallery horizontally */
-    }
-
-    .image-container {
-        width: 100%; /* Ensure image containers take up full width */
-        max-width: 600px; /* Adjust maximum width as needed */
+/* Adjustments to Gallery Styles for Mobile Devices */
+@media only screen and (max-width: 767px) {
+    .gallery img {
+        max-width: 90%; /* Increase image size for mobile */
+        margin-bottom: 20px; /* Add space between images */
     }
 }
