@@ -91,27 +91,3 @@ footer {
     border-radius: 5px;
     cursor: pointer;
 }
-
-/* Gallery Page Styles */
-.gallery {
-    text-align: center;
-    margin-top: 50px;
-}
-
-.image-container {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.gallery img {
-    max-width: 100%;
-    height: auto;
-    max-width: 600px; /* Adjust the maximum width of images as needed */
-    margin-bottom: 20px; /* Add margin between images */
-}
-
-@media (min-width: 768px) {
-    .gallery {
-        width: 70%; /* Adjust the width of the gallery container for larger screens */
-    }
-}
