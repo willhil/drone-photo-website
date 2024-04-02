@@ -120,3 +120,9 @@ footer {
     max-width: 100%;
     height: auto;
 }
+
+/* Adjust the margin and padding for individual slides in the carousel */
+.slick-slide {
+    margin: 0 5px; /* Adjust the horizontal margin as needed */
+    padding: 0; /* Remove any padding */
+}
