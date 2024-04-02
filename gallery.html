@@ -207,16 +207,52 @@
                 dots: true,
                 infinite: true,
                 speed: 300,
-                slidesToShow: 1,
-                adaptiveHeight: true
+                slidesToShow: 3, // Display 3 slides at a time
+                slidesToScroll: 1, // Scroll 1 slide at a time
+                responsive: [
+                    {
+                        breakpoint: 1024, // Breakpoint for desktop screens
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600, // Breakpoint for smaller screens
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
             });
             // Initialize the second carousel
             $('.second-carousel').slick({
                 dots: true,
                 infinite: true,
                 speed: 300,
-                slidesToShow: 1,
-                adaptiveHeight: true
+                slidesToShow: 3, // Display 3 slides at a time
+                slidesToScroll: 1, // Scroll 1 slide at a time
+                responsive: [
+                    {
+                        breakpoint: 1024, // Breakpoint for desktop screens
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600, // Breakpoint for smaller screens
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
             });
         });
     </script>
